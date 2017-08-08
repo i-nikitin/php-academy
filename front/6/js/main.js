@@ -15,17 +15,23 @@
 //     Новый текст вывести на экран, в модальном окне или консоле.
 
 var str = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
-var arr = str.split(' ');
-//alert(arr.length);
+var arr = str.slice (0, -1);
+var text = arr.split(". ");
 
-function sortWord(a,b)
-{
-    var s1 = " " + a;
-    var s2 = " " + b;
-    if(s1.length < s2.lenght){return 1;}
-    else if(s1.length > s2.length){return -1;}
-    return 0;
+if (var i=0; i< text.length; i++) {
+    text[i] = text[i].split(" ");
+    text[i].sort(sortWord);
+    text[i] = text[i].join(" ");
+    text[i] += ".";
 }
-alert(arr.sort(sortWord) );
-var str2 = arr.join(' ');
-alert( str2 );
+ resalt = text.join(" ");
+function sortWord(a, b)
+{
+    return b.length - a.length;
+
+    // return a.length - b.length;
+}
+alert(str);
+alert (resalt);
+
+//Я чесно не смог придумать свой код, так как немного потерял суть. Я взял за основу Ваш код.
