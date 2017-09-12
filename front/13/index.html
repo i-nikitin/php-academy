@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jetro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+<div id = first>
+    <div class="wrap">
+        <div class="header">
+            <a href="/" class="logo"><span>Jet</span>ro</a>
+
+            <ul class="menu">
+                <li><a class="active" href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact us</a></li>
+                <button id="check" onclick="event.preventDefault()">CHECK</button>
+            </ul>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="wrap">
+        <div class="slider">
+            <img src="images/slider.png" alt="">
+            <div class="desc">
+                <h2>Slide one</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et exercitationem impedit necessitatibus nihil nulla quibusdam quo quod sapiente soluta voluptatibus!</p>
+            </div>
+            <div class="left">arr left</div>
+            <div class="right">arr right</div>
+        </div>
+        <div class="thumbnails">
+            <img src="images/thumb.png" alt="">
+            <img src="images/thumb.png" alt="">
+            <img src="images/thumb.png" alt="">
+            <img src="images/thumb.png" alt="">
+            <img src="images/thumb.png" alt="">
+            <img src="images/thumb.png" alt="">
+        </div>
+        <div class="features">
+            <div class="item f1">
+                <h3>Check out my latest items</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi asperiores consequatur dignissimos eligendi iste natus nobis repudiandae vero voluptatibus?</p>
+                <a class="more" href="">More</a>
+            </div>
+            <div class="item f2">
+                <h3>Check out my latest items</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi asperiores consequatur dignissimos eligendi iste natus nobis repudiandae vero voluptatibus?</p>
+                <a class="more" href="">More</a>
+            </div>
+            <div class="item f3">
+                <h3>Check out my latest items</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi asperiores consequatur dignissimos eligendi iste natus nobis repudiandae vero voluptatibus?</p>
+                <a class="more" href="">More</a>
+            </div>
+        </div>
+        <h3 class="title">Recent works</h3>
+        <div class="blog">
+            <div class="down 1"><a href=""><img src="images/down1.png" alt=""><h3>Character design</h3>
+            <p>june 15, 2012</p></a></div>
+            <div class="down 2"><a href=""><img src="images/down2.png" alt=""><h3>Brochure design</h3>
+                <p>june 15, 2012</p></a></div>
+            <div class="down 3"><a href=""><img src="images/down3.png" alt=""><h3>Social media buttons</h3>
+                <p>june 15, 2012</p></a></div>
+            <div class="down 4"><a href=""><img src="images/down4.png" alt=""><h3>10 amazing websites</h3>
+                <p>june 15, 2012</p></a></div>
+
+        </div>
+    </div>
+    <div class="line2"></div>
+    <div class="wrap">
+        <div class="end">
+
+            <div class="about f1">
+                <h3>About Jetro</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi asperiores consequatur dignissimos eligendi iste natus nobis repudiandae vero voluptatibus?</p>
+                <p id="br">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="about f2">
+                <h3>Twitter widget</h3>
+                <p><span>@pixelmaster</span> What an awesome design with great functionality :)</p>
+                <p><span>about 1 hour ago</span></p>
+                <p id="br"><span>@pixelmaster</span> What an awesome design with great functionality :)</p>
+                <p><span>about 1 hour ago</span></p>
+                <p id="br">Follow<span>@bestpspfribies</span></p>
+            </div>
+
+            <div class="about f3"> <h3>Contact us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi asperiores consequatur dignissimos.</p>
+                <p id="br">info@jetro.com</p>
+                <p>1.22.333.4444</p>
+                <div class="icon" id="br">
+                    <a href=""><img src="images/icon1.png" alt=""></a>
+                    <a href=""><img src="images/icon2.png" alt=""></a>
+                    <a href=""><img src="images/icon3.png" alt=""></a>
+                    <a href=""><img src="images/icon4.png" alt=""></a>
+                    <a href=""><img src="images/icon5.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <script>
+
+            check.addEventListener("click", fn);
+                function fn(even) {
+                    var newWin = window.open("about:blank", "hello", "width=200,height=200");
+                    newWin.document.write('DIV - ' + document.getElementsByTagName('div').length + '</br>');
+                    newWin.document.write('A - ' + document.getElementsByTagName('a').length + '</br>');
+                    newWin.document.write('P - ' + document.getElementsByTagName('p').length + '</br>');
+                    newWin.document.write('H3 - ' + document.getElementsByTagName('h3').length + '</br>');
+                    newWin.document.write('LI - ' + document.getElementsByTagName('li').length + '</br>');
+                    newWin.document.write('UL - ' + document.getElementsByTagName('ul').length + '</br>');
+            }
+            check.addEventListener("click", fn2);
+
+                function fn2(even) {
+                    window.close();
+                }
+
+
+//            console.log(document.getElementsByTagName('div').length);
+//            console.log(document.getElementsByTagName('a').length);
+//            console.log(document.getElementsByTagName('p').length);
+//            console.log(document.getElementsByTagName('h3').length);
+//            console.log(document.getElementsByTagName('li').length);
+//            console.log(document.getElementsByTagName('ul').length);
+
+
+
+//        console.log(document.getElementById('first'));
+//        var w = document.body.children[0].children[0];
+//        console.log(w);
+//
+//
+//        var t = [document.getElementsByTagName('*')];
+//        console.log(t);
+//
+//        var result = [];
+//        for (var i = 0; i < t[0].length; ++i)
+//        {
+//            var a = t[0][i];
+//            if (result[a] != undefined)
+//                ++result[a];
+//            else
+//                result[a] = 1;
+//        }
+//        for (var key in result)
+//            console.log('число ' + key + ' == ' + result[key] + ' раз(а) <br>');
+//
+
+
+
+    </script>
+</body>
+</html>
