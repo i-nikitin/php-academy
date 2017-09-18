@@ -15,7 +15,7 @@ function Components(){
         status = true;
     };
     
-    this.disabled = function () {
+    disable = function () {
         status = false;
     };
  }
