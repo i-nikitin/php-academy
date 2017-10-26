@@ -47,27 +47,30 @@
         });
 
       return <div>
-        {list}
-        {list2}
-        {list3}
+          {list2}
+          {list}
+          {list3}
+
+
       </div>
     }
   });
   var Headerl = React.createClass ({
       render: function() {
-          return <div className="col-sm-6 col-md-4">
+          return <div className="col-md-2">
             <div className="header">
               <ul class="menu">
-                <li><a class="active" href="#">{this.props.titlename}</a></li>
+                <li><a class="active" href="#">{this.props}</a></li>
               </ul>
             </div>
           </div>
       }
   });
+  //document.body.insertBefore(Headerl, document.body.firstChild);
 
   var Footerl = React.createClass ({
       render: function() {
-          return <div className="col-sm-6 col-md-4">
+          return <div className="col-md-2">
             <div className="footerImg">
               <img src={this.props.img} alt="..." height="50" width="50"></img>
               <div className="footerLink">
@@ -92,17 +95,7 @@
               description: 'Gulp will speed up your development workflow.  Gulp will speed up your development workflow.  Gulp will speed up your development workflow.',
               imageUrl: 'http://brunch.io/images/others/gulp.png'
           }],
-                headerData:[{
-                  titlename: 'First',
-                },{
-                    titlename: 'Second',
-                },{
-                    titlename: 'Third',
-                },{
-                    titlename: 'Fourth',
-                },{
-                    titlename: 'Fifth',
-                }],
+                headerData:['First', 'Second', 'Third', 'Fourth', 'Fifth'],
                 footerData: [{
                   img: 'https://assets-cdn.github.com/images/modules/open_graph/github-logo.png',
                   link: 'github.com/i-nikitin',
